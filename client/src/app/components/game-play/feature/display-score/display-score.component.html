@@ -1,0 +1,14 @@
+<h2>Différences trouvées</h2>
+<div [ngClass]="{ colored: isLimitedTimeMode(), content: !isLimitedTimeMode() }">
+    <div [ngClass]="{ names_container: isLimitedTimeMode(), content: !isLimitedTimeMode() }">
+        <div [ngClass]="{ colored: !isLimitedTimeMode() }">
+            <p>{{ gameData.name }} (vous)</p>
+            <i *ngIf="!isLimitedTimeMode()">{{ differencesFound(firstPlayerScore) }}/{{ differencesLeft }}</i>
+        </div>
+        <div [ngClass]="{ colored: !isLimitedTimeMode() }" *ngIf="isMultiplayer">
+            <p>{{ gameData.name2ndPlayer }}</p>
+            <i *ngIf="!isLimitedTimeMode()">{{ differencesFound(secondPlayerScore) }}/{{ differencesLeft }}</i>
+        </div>
+    </div>
+    <i *ngIf="isLimitedTimeMode()">{{ differencesFound(firstPlayerScore) }} différences trouvées</i>
+</div>

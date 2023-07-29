@@ -1,0 +1,23 @@
+<app-top-bar [pageTitle]="'Configuration'" style="width: 100%"></app-top-bar>
+<div id="page-core" class="row">
+    <app-carousel-view [buttonNames]="buttonNames"></app-carousel-view>
+    <div class="sidebar">
+        <div class="sidebar-top">
+            <a class="button" routerLink="/creation" draggable="false">
+                <img id="create-game" src="./assets/create-game.png" />
+            </a>
+            <a class="button" (click)="deleteAllGames()" draggable="false">
+                <img id="delete-games" src="./assets/delete-games.png" />
+            </a>
+        </div>
+        <a class="button" (click)="resetAllBestTimes()" draggable="false">
+            <img id="reset-best-times" src="./assets/reset-best-times.png" />
+        </a>
+        <a class="button" (click)="requestHistory()" draggable="false">
+            <img id="game-history" src="./assets/game-history.png" />
+        </a>
+        <a class="button" (click)="requestGameConstants()" draggable="false">
+            <img id="game-settings" src="./assets/game-settings.png" />
+        </a>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<app-top-bar pageTitle="Créer un jeu"></app-top-bar>
+<div class="creation-zone">
+    <div class="top-zone">
+        <a class="back" routerLink="/config"><span class="arrow">🡐</span>Retour à la configuration</a>
+        <div id="tools-zone">
+            <app-paper-button name="Valider" (click)="sendDifferenceCalculationRequest()" id="validate-btn"></app-paper-button>
+            <hr />
+            <app-tool-bar></app-tool-bar>
+            <hr />
+            <div class="configuration-zone">
+                <label for="radius">Rayon d'élargissement des différences:</label>
+                <div class="slider">
+                    <div class="slider-bar">
+                        <input
+                            #sliderInput
+                            type="range"
+                            name="radius"
+                            min="0"
+                            max="3"
+                            value="1"
+                            list="ticks"
+                            (input)="updateDifferenceRadius(sliderInput.value)"
+                        />
+                        <datalist id="ticks">
+                            <option value="0" label="0"></option>
+                            <option value="1" label="3"></option>
+                            <option value="2" label="9"></option>
+                            <option value="3" label="15"></option>
+                        </datalist>
+                    </div>
+                    <p id="slider-value">{{ differenceRadius }} pixels</p>
+                </div>
+            </div>
+        </div>
+        <em> Les images téléversées doivent être dans un format bitmap (BMP) 24-bit et avoir une taille de 640 x 480 pixels </em>
+    </div>
+    <div class="images-zone">
+        <div>
+            <h3 class="image-title">Image originale</h3>
+            <app-image-edition-zone [imageIndex]="originalImageIndex"></app-image-edition-zone>
+        </div>
+        <div class="middle-zone">
+            <button id="swap" matTooltip="Intervertir les avant-plans" (click)="swapForegrounds()">
+                <img src="./assets/swap_icon 3.png" alt="Intervertir les avant-plans" draggable="false" />
+            </button>
+        </div>
+        <div>
+            <h3 class="image-title">Image modifiée</h3>
+            <app-image-edition-zone [imageIndex]="modifiedImageIndex"></app-image-edition-zone>
+        </div>
+    </div>
+</div>
+<canvas id="hidden-canvas" #hiddenCanvas [attr.width]="canvasWidth" [attr.height]="canvasHeight"></canvas>

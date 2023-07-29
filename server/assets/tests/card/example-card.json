@@ -1,0 +1,244 @@
+{
+    "id": "6407c06ef10529dac63b4a35",
+    "_id": "6407c06ef10529dac63b4a35",
+    "name": "Game 1",
+    "difficulty": 0,
+    "classicSoloBestTimes": {
+        "firstPlace": { "name": "test", "time": { "seconds": 6, "minutes": 0 } },
+        "secondPlace": { "name": "Zarine", "time": { "seconds": 54, "minutes": 1 } },
+        "thirdPlace": { "name": "Lucas", "time": { "seconds": 22, "minutes": 2 } }
+    },
+    "classic1v1BestTimes": {
+        "firstPlace": { "name": "lol", "time": { "seconds": 5, "minutes": 0 } },
+        "secondPlace": { "name": "joueur2", "time": { "seconds": 7, "minutes": 0 } },
+        "thirdPlace": { "name": "Alexandre", "time": { "seconds": 37, "minutes": 2 } }
+    },
+    "differenceNbr": 5,
+    "differences": [
+        {
+            "yMin": 69,
+            "yMax": 97,
+            "lines": [
+                [{ "start": 285, "end": 289 }],
+                [{ "start": 284, "end": 291 }],
+                [{ "start": 283, "end": 292 }],
+                [{ "start": 282, "end": 293 }],
+                [{ "start": 281, "end": 293 }],
+                [
+                    { "start": 281, "end": 293 },
+                    { "start": 270, "end": 276 }
+                ],
+                [
+                    { "start": 280, "end": 294 },
+                    { "start": 269, "end": 277 }
+                ],
+                [{ "start": 268, "end": 294 }],
+                [{ "start": 267, "end": 294 }],
+                [{ "start": 266, "end": 294 }],
+                [{ "start": 266, "end": 294 }],
+                [{ "start": 266, "end": 294 }],
+                [{ "start": 267, "end": 294 }],
+                [{ "start": 267, "end": 294 }],
+                [{ "start": 267, "end": 293 }],
+                [{ "start": 267, "end": 293 }],
+                [{ "start": 268, "end": 293 }],
+                [{ "start": 269, "end": 292 }],
+                [{ "start": 270, "end": 292 }],
+                [{ "start": 270, "end": 292 }],
+                [{ "start": 271, "end": 292 }],
+                [{ "start": 272, "end": 292 }],
+                [{ "start": 273, "end": 292 }],
+                [{ "start": 274, "end": 291 }],
+                [{ "start": 274, "end": 290 }],
+                [{ "start": 275, "end": 289 }],
+                [{ "start": 276, "end": 288 }],
+                [{ "start": 279, "end": 287 }],
+                [{ "start": 281, "end": 286 }]
+            ],
+            "hints": [
+                { "start": { "x": 0, "y": 0 }, "end": { "x": 320, "y": 240 } },
+                { "start": { "x": 160, "y": 0 }, "end": { "x": 320, "y": 120 } },
+                { "start": { "x": 240, "y": 60 }, "end": { "x": 320, "y": 120 } }
+            ]
+        },
+        {
+            "yMin": 159,
+            "yMax": 177,
+            "lines": [
+                [{ "start": 96, "end": 100 }],
+                [{ "start": 95, "end": 101 }],
+                [{ "start": 94, "end": 102 }],
+                [{ "start": 93, "end": 103 }],
+                [{ "start": 92, "end": 104 }],
+                [{ "start": 91, "end": 104 }],
+                [{ "start": 91, "end": 105 }],
+                [{ "start": 91, "end": 105 }],
+                [{ "start": 90, "end": 105 }],
+                [{ "start": 90, "end": 105 }],
+                [{ "start": 89, "end": 105 }],
+                [{ "start": 89, "end": 105 }],
+                [{ "start": 89, "end": 105 }],
+                [{ "start": 90, "end": 105 }],
+                [{ "start": 90, "end": 105 }],
+                [{ "start": 91, "end": 105 }],
+                [{ "start": 91, "end": 104 }],
+                [{ "start": 92, "end": 103 }],
+                [{ "start": 93, "end": 101 }]
+            ],
+            "hints": [
+                { "start": { "x": 0, "y": 0 }, "end": { "x": 320, "y": 240 } },
+                { "start": { "x": 0, "y": 120 }, "end": { "x": 160, "y": 240 } },
+                { "start": { "x": 80, "y": 120 }, "end": { "x": 160, "y": 180 } }
+            ]
+        },
+        {
+            "yMin": 301,
+            "yMax": 322,
+            "lines": [
+                [{ "start": 388, "end": 394 }],
+                [{ "start": 387, "end": 395 }],
+                [{ "start": 386, "end": 396 }],
+                [{ "start": 386, "end": 397 }],
+                [{ "start": 386, "end": 398 }],
+                [{ "start": 386, "end": 399 }],
+                [{ "start": 386, "end": 399 }],
+                [{ "start": 386, "end": 399 }],
+                [{ "start": 385, "end": 399 }],
+                [{ "start": 385, "end": 399 }],
+                [{ "start": 385, "end": 399 }],
+                [{ "start": 385, "end": 399 }],
+                [{ "start": 385, "end": 399 }],
+                [{ "start": 385, "end": 399 }],
+                [{ "start": 385, "end": 399 }],
+                [{ "start": 385, "end": 399 }],
+                [{ "start": 385, "end": 399 }],
+                [{ "start": 386, "end": 399 }],
+                [{ "start": 387, "end": 398 }],
+                [{ "start": 388, "end": 397 }],
+                [{ "start": 389, "end": 396 }],
+                [{ "start": 393, "end": 395 }]
+            ],
+            "hints": [
+                { "start": { "x": 320, "y": 240 }, "end": { "x": 640, "y": 480 } },
+                { "start": { "x": 320, "y": 240 }, "end": { "x": 480, "y": 360 } },
+                { "start": { "x": 320, "y": 300 }, "end": { "x": 400, "y": 360 } }
+            ]
+        },
+        {
+            "yMin": 358,
+            "yMax": 386,
+            "lines": [
+                [{ "start": 45, "end": 48 }],
+                [
+                    { "start": 43, "end": 49 },
+                    { "start": 54, "end": 56 }
+                ],
+                [
+                    { "start": 42, "end": 51 },
+                    { "start": 53, "end": 58 }
+                ],
+                [{ "start": 41, "end": 59 }],
+                [{ "start": 40, "end": 60 }],
+                [{ "start": 40, "end": 60 }],
+                [{ "start": 39, "end": 60 }],
+                [{ "start": 38, "end": 61 }],
+                [{ "start": 38, "end": 61 }],
+                [{ "start": 38, "end": 62 }],
+                [{ "start": 39, "end": 63 }],
+                [{ "start": 40, "end": 64 }],
+                [{ "start": 39, "end": 64 }],
+                [{ "start": 38, "end": 64 }],
+                [{ "start": 37, "end": 65 }],
+                [{ "start": 37, "end": 65 }],
+                [{ "start": 37, "end": 65 }],
+                [{ "start": 37, "end": 65 }],
+                [{ "start": 38, "end": 65 }],
+                [
+                    { "start": 39, "end": 42 },
+                    { "start": 44, "end": 64 }
+                ],
+                [{ "start": 43, "end": 64 }],
+                [{ "start": 43, "end": 64 }],
+                [{ "start": 43, "end": 63 }],
+                [{ "start": 43, "end": 62 }],
+                [{ "start": 44, "end": 61 }],
+                [{ "start": 45, "end": 60 }],
+                [{ "start": 46, "end": 59 }],
+                [{ "start": 47, "end": 55 }],
+                [{ "start": 52, "end": 54 }]
+            ],
+            "hints": [
+                { "start": { "x": 0, "y": 240 }, "end": { "x": 320, "y": 480 } },
+                { "start": { "x": 0, "y": 360 }, "end": { "x": 160, "y": 480 } },
+                { "start": { "x": 0, "y": 360 }, "end": { "x": 80, "y": 420 } }
+            ]
+        },
+        {
+            "yMin": 439,
+            "yMax": 481,
+            "lines": [
+                [{ "start": 336, "end": 342 }],
+                [{ "start": 335, "end": 343 }],
+                [{ "start": 333, "end": 344 }],
+                [{ "start": 332, "end": 344 }],
+                [{ "start": 331, "end": 345 }],
+                [{ "start": 330, "end": 345 }],
+                [{ "start": 329, "end": 346 }],
+                [{ "start": 328, "end": 346 }],
+                [{ "start": 327, "end": 346 }],
+                [{ "start": 326, "end": 346 }],
+                [{ "start": 325, "end": 347 }],
+                [{ "start": 325, "end": 347 }],
+                [
+                    { "start": 325, "end": 347 },
+                    { "start": 316, "end": 322 }
+                ],
+                [
+                    { "start": 325, "end": 347 },
+                    { "start": 315, "end": 323 }
+                ],
+                [{ "start": 314, "end": 347 }],
+                [{ "start": 314, "end": 347 }],
+                [{ "start": 314, "end": 347 }],
+                [{ "start": 314, "end": 347 }],
+                [
+                    { "start": 314, "end": 347 },
+                    { "start": 352, "end": 357 }
+                ],
+                [
+                    { "start": 314, "end": 347 },
+                    { "start": 351, "end": 358 }
+                ],
+                [{ "start": 314, "end": 359 }],
+                [{ "start": 314, "end": 360 }],
+                [{ "start": 314, "end": 360 }],
+                [{ "start": 314, "end": 360 }],
+                [{ "start": 314, "end": 360 }],
+                [{ "start": 314, "end": 360 }],
+                [{ "start": 311, "end": 360 }],
+                [{ "start": 309, "end": 359 }],
+                [{ "start": 308, "end": 358 }],
+                [{ "start": 307, "end": 358 }],
+                [{ "start": 306, "end": 358 }],
+                [{ "start": 305, "end": 358 }],
+                [{ "start": 305, "end": 357 }],
+                [{ "start": 299, "end": 357 }],
+                [{ "start": 298, "end": 357 }],
+                [{ "start": 297, "end": 357 }],
+                [{ "start": 296, "end": 356 }],
+                [{ "start": 295, "end": 356 }],
+                [{ "start": 295, "end": 355 }],
+                [{ "start": 295, "end": 355 }],
+                [{ "start": 295, "end": 354 }],
+                [{ "start": 295, "end": 353 }],
+                [{ "start": 295, "end": 353 }]
+            ],
+            "hints": [
+                { "start": { "x": 320, "y": 240 }, "end": { "x": 640, "y": 480 } },
+                { "start": { "x": 320, "y": 360 }, "end": { "x": 480, "y": 480 } },
+                { "start": { "x": 320, "y": 420 }, "end": { "x": 400, "y": 480 } }
+            ]
+        }
+    ],
+    "__v": 0
+}

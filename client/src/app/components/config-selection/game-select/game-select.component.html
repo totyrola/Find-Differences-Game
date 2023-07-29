@@ -1,0 +1,19 @@
+<div id="game-container" [attr.class]="difficulty">
+    <div id="game-description">
+        <h3>{{ game.name }}</h3>
+        <h3>{{ difficulty }}</h3>
+    </div>
+    <div class="select-body">
+        <img class="game-picture" [attr.src]="'data:bmp;base64,' + game.originalImage | safeResourceUrl" draggable="false" />
+        <app-top-three [soloScores]="game.classicSoloBestTimes" [vsScores]="game.classic1v1BestTimes"></app-top-three>
+    </div>
+    <img class="push-pin" src="./assets/push_pin.png" draggable="false" />
+    <div id="button-container">
+        <app-paper-button #left [name]="leftButtonName" (click)="sendSelection(left.name)"></app-paper-button>
+        <ng-container [ngSwitch]="game.gameStatus">
+            <app-paper-button *ngSwitchCase="true" #right [name]="rightButtonNames[1]" (click)="sendSelection(right.name)"></app-paper-button>
+            <app-paper-button *ngSwitchCase="false" #right [name]="rightButtonNames[0]" (click)="sendSelection(right.name)"></app-paper-button>
+            <app-paper-button *ngSwitchDefault #right [name]="rightButtonNames[0]" (click)="sendSelection(right.name)"></app-paper-button>
+        </ng-container>
+    </div>
+</div>

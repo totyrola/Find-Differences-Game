@@ -1,0 +1,77 @@
+<app-replay-area *ngIf="isReplaying()"></app-replay-area>
+<div class="row">
+    <div id="left-column" class="column">
+        <div id="card-infos" class="row">
+            <div>
+                <h2>{{ gameName }}</h2>
+                <ng-container [ngSwitch]="gameMode">
+                    <p *ngSwitchCase="0">Classique 1v1</p>
+                    <p *ngSwitchCase="1">Classique solo</p>
+                    <p *ngSwitchCase="2">Temps limité coop</p>
+                    <p *ngSwitchCase="3">Temps limité solo</p>
+                    <p *ngSwitchDefault></p>
+                </ng-container>
+                <p *ngIf="gameMode < 2">{{ difficulty }}</p>
+            </div>
+            <div class="column">
+                <div class="row value">
+                    <p>Total de différences:</p>
+                    <p>{{ totalDifferences }}</p>
+                </div>
+                <ng-container *ngIf="this.gameValues">
+                    <div *ngIf="!isMultiplayerGame()" class="row value">
+                        <p>Pénalité sur indice</p>
+                        <p>{{ gameValues.penaltyTime }}s</p>
+                    </div>
+                    <div *ngIf="gameMode > 1" class="row value">
+                        <p>Bonus sur différences</p>
+                        <p>{{ gameValues.gainedTime }}s</p>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+        <app-chatbox [isMultiplayer]="isMultiplayer" [ngClass]="{ 'no-click': isReplaying() }"></app-chatbox>
+    </div>
+    <div class="column">
+        <div id="game-infos" class="row">
+            <app-chronometer-container></app-chronometer-container>
+            <hr />
+            <div *ngIf="!isCoopGame">
+                <app-display-score
+                    [isMultiplayer]="isMultiplayerGame()"
+                    [firstPlayerScore]="personalDifference"
+                    [secondPlayerScore]="enemyDifference"
+                ></app-display-score>
+            </div>
+            <div *ngIf="isCoopGame">
+                <app-display-score
+                    [isMultiplayer]="isMultiplayerGame()"
+                    [firstPlayerScore]="personalDifference"
+                    [secondPlayerScore]="personalDifference"
+                ></app-display-score>
+            </div>
+            <hr *ngIf="!isMultiplayerGame()" />
+            <div *ngIf="!isMultiplayerGame()" class="hint-zone" [ngClass]="{ 'no-click': isReplaying() }">
+                <div class="row hint">
+                    <app-display-hints></app-display-hints>
+                    <app-post-it class="hint button" image="./assets/ampoule-a-incandescence.png" (click)="requestHint()"></app-post-it>
+                </div>
+                <span
+                    class="hint-info"
+                    matTooltip="Chaque indice s'affiche pendant {{ hintDuration }} secondes.
+                    Les trois indices sont, dans l'ordre:
+                        1. Un cadran dans lequel se trouve au moins une des différences.
+                        2. Un sous-cadran (1/16) dans lequel se trouve au moins une des différences.
+                        3. Trois petites zones parmi lesquelles une zone contient une des différence et les deux autres sont aléatoires."
+                    >?</span
+                >
+            </div>
+            <hr *ngIf="!isReplaying()" />
+            <app-post-it *ngIf="!isReplaying()" id="give-up" class="button" name="Abandonner" (click)="toggleGiveUp()"></app-post-it>
+        </div>
+        <div id="game-panels" class="row" [ngClass]="{ 'no-click': isReplaying() }">
+            <app-play-area [isModified]="false" [backgroundImageUrl]="originalUrl" name="Image originale"></app-play-area>
+            <app-play-area [isModified]="true" [backgroundImageUrl]="modifiedUrl" name="Image modifiée"></app-play-area>
+        </div>
+    </div>
+</div>

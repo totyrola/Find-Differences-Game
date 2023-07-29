@@ -1,0 +1,45 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.content {
+    display: contents;
+}
+
+i {
+    font-size: 20px;
+}
+
+.names_container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.colored {
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 330px;
+    min-height: fit-content;
+}
+
+.colored:last-child {
+    border-color: #4fce7a;
+    background-color: #a4ffc3;
+}
+
+:host > .colored,
+.colored:first-child {
+    border-color: #b36bcc;
+    background-color: #e7a4ff;
+}

@@ -1,0 +1,74 @@
+:host {
+    display: contents;
+}
+
+.facile {
+    background-color: #67eae5;
+}
+
+.moyen {
+    background-color: #fcdb00;
+}
+
+.difficile {
+    background-color: #ff7faf;
+}
+
+.push-pin {
+    align-self: center;
+    position: absolute;
+    object-fit: contain;
+    width: 30px;
+    height: 30px;
+    top: 3%;
+}
+
+#game-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 15px;
+    width: 500px;
+    height: fit-content;
+    max-height: 380px;
+    margin-right: 145px;
+}
+
+#game-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    align-self: stretch;
+}
+
+.select-body {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+    gap: 42px;
+}
+
+.game-picture {
+    width: auto;
+    height: 180px;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: stretch;
+    height: fit-content;
+    width: 100%;
+}
+
+app-paper-button {
+    width: fit-content;
+    height: 50px;
+}

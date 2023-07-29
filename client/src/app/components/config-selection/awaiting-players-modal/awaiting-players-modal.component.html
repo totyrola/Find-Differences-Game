@@ -1,0 +1,16 @@
+<h2 *ngIf="data.displayMessage === 1">En attente de joueurs</h2>
+<h2 *ngIf="data.displayMessage === 2">En attente d'être accepté dans la partie</h2>
+<div id="waiting-players" class="flex-column">
+    <span class="flex-row" *ngFor="let waitingPlayer of data.waitingPlayers">
+        <h3>{{ waitingPlayer.name }}</h3>
+        <span class="button-container flex-row">
+            <app-paper-button name="Accepter" (click)="validatePlayer(true, waitingPlayer.id, waitingPlayer.name)"></app-paper-button>
+            <app-paper-button name="Rejeter" (click)="validatePlayer(false, waitingPlayer.id, waitingPlayer.name)"></app-paper-button>
+        </span>
+    </span>
+</div>
+<app-paper-button name="Quitter" (click)="closeDialog()"></app-paper-button>
+<img class="green-push-pin top left" src="./assets/green_pin.png" draggable="false" />
+<img class="green-push-pin top right" src="./assets/green_pin.png" draggable="false" />
+<img class="green-push-pin bottom left" src="./assets/green_pin.png" draggable="false" />
+<img class="green-push-pin bottom right" src="./assets/green_pin.png" draggable="false" />

@@ -1,0 +1,31 @@
+<app-page-title class="title" [pageTitle]="'Reprise vidéo'"></app-page-title>
+<div class="row">
+    <div id="control-buttons-zone">
+        <a (click)="restart()" class="control-btn hovering-btn">
+            <img src="./assets/restart.png" />
+        </a>
+        <a *ngIf="!paused" [ngClass]="{ 'deactivated-btn': ended }" (click)="pause()" class="control-btn hovering-btn">
+            <img src="./assets/pause.png" />
+        </a>
+        <a *ngIf="paused" class="control-btn hovering-btn" (click)="resume()">
+            <img src="./assets/resume.png" />
+        </a>
+    </div>
+    <div id="progress-zone">
+        <progress class="progress-bar" [value]="progress" max="100"></progress>
+    </div>
+    <div id="speed-zone" class="column">
+        <h3>Vitesse de lecture</h3>
+        <div class="speed-buttons">
+            <app-post-it
+                class="speed-btn"
+                [ngClass]="{ selected: speed === speeds.NORMAL }"
+                name="x1"
+                (click)="selectSpeed(speeds.NORMAL)"
+            ></app-post-it>
+            <app-post-it class="speed-btn" [ngClass]="{ selected: speed === speeds.X2 }" name="x2" (click)="selectSpeed(speeds.X2)"></app-post-it>
+            <app-post-it class="speed-btn" [ngClass]="{ selected: speed === speeds.X4 }" name="x4" (click)="selectSpeed(speeds.X4)"></app-post-it>
+        </div>
+    </div>
+</div>
+<app-post-it id="quit-btn" name="Quitter" (click)="exit()"></app-post-it>
